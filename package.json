@@ -1,6 +1,6 @@
 {
-  "name": "@nendo/tree-sitter-mcp",
-  "version": "2.7.0",
+  "name": "@iflow-mcp/nendotools-tree-sitter-mcp",
+  "version": "2.7.1",
   "description": "Fast in-memory code search and analysis MCP service using tree-sitter",
   "keywords": [
     "mcp",
@@ -13,14 +13,14 @@
   "license": "GPL-3.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nendotools/tree-sitter-mcp.git"
+    "url": "https://github.com/iflow-mcp/nendotools-tree-sitter-mcp.git"
   },
   "type": "module",
   "engines": {
     "node": ">=18.0.0"
   },
   "bin": {
-    "tree-sitter-mcp": "dist/cli.js"
+    "iflow-mcp-nendotools-tree-sitter-mcp": "dist/cli.js"
   },
   "files": [
     "dist/**/*.js",
@@ -46,7 +46,7 @@
     "prepare": "npm run build",
     "setup": "tsx src/setup.ts",
     "global-install": "npm run build && npm link",
-    "global-uninstall": "npm unlink -g @nendo/tree-sitter-mcp"
+    "global-uninstall": "npm unlink -g @iflow-mcp/nendotools-tree-sitter-mcp"
   },
   "dependencies": {
     "@iarna/toml": "^2.2.5",
@@ -70,7 +70,6 @@
     "tree-sitter-html": "^0.23.2",
     "tree-sitter-java": "^0.21.0",
     "tree-sitter-javascript": "^0.21.0",
-    "tree-sitter-kotlin": "github:fwcd/tree-sitter-kotlin",
     "tree-sitter-php": "^0.23.12",
     "tree-sitter-python": "^0.21.0",
     "tree-sitter-ruby": "^0.21.0",
